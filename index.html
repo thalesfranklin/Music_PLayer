@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Music-PLayer</title>
 </head>
+
 <body>
-    <img src="/imagens/Ted.jpeg" alt="LoseControl">
-    <div class="descriscao">
-        <h2>Lose Control</h2>
-        <i>Teddy Swims</i>
-    </div>
-    <div class="duracao">
-        <div class="barra">
-            <progress value="0" max="1"></progress>
-            <div class="ponto">
-                <i class="bi bi-record-fill"></i>
+    <div class="all">
+        <img src="/imagens/Ted.jpeg" alt="LoseControl">
+        <div class="descriscao">
+            <h2>Lose Control</h2>
+            <i>Teddy Swims</i>
+        </div>
+        <div class="duracao">
+            <div class="barra">
+                <progress value="0" max="1"></progress>
+                <div class="ponto">
+                    <i class="bi bi-record-fill"></i>
+                </div>
+            </div>
+            <div class="tempo">
+                <p class="inicio">0:00</p>
+                <p class="fim">3:14</p>
             </div>
         </div>
-        <div class="tempo">
-            <p class="inicio">0:00</p>
-            <p class="fim">3:14</p>
+        <div class="player">
+            <i class="bi bi-skip-start-fill"></i>
+            <i class="bi bi-play-circle-fill"></i>
+            <i class="bi bi-pause-circle"></i>
+            <i class="bi bi-skip-end-fill"></i>
         </div>
+        <audio src="./musicas/LoseControl - Teddy Swims.mp3"></audio>
     </div>
-    <div class="player">
-        <i class="bi bi-skip-start-fill"></i>
-        <i class="bi bi-play-circle-fill"></i>
-        <i class="bi bi-pause-circle"></i>
-        <i class="bi bi-skip-end-fill"></i>
-    </div>
-    <audio src="./musicas/LoseControl - Teddy Swims.mp3"></audio>
 </body>
+
 </html>
