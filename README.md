@@ -75,7 +75,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão, entre em contato com [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+Se você tiver alguma dúvida ou sugestão, entre em contato com thalescristiano2@gmail.com.
 
 ---
 
