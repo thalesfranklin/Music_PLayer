@@ -24,7 +24,7 @@ img {
 
 }
 
-.descriscao {
+.descripton {
     width: 284px;
 }
 
@@ -37,13 +37,13 @@ i {
     padding: 2%;
 }
 
-.duracao {
+.duration {
     width: 284px;
     margin-top: 25px;
     padding: 2%;
 }
 
-.barra {
+.bar {
     width: 284px;
     height: 6px;
     border: 1px solid rgb(0, 0, 0);
@@ -55,18 +55,18 @@ i {
 
 progress {
     height: 6px;
-    width: 50%;
+    width: 0%;
     background-color: black;
 }
 
-.ponto {
+.point {
     width: 20px;
     height: 18px;
     margin-left: -5px;
     cursor: pointer;
 }
 
-.tempo {
+.time {
     display: flex;
     width: 284px;
     justify-content: space-between;
