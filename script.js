@@ -1,4 +1,4 @@
-let musics = [
+let musicas = [
     {
         title: 'Lose Control',
         artist: 'Teddy Swims',
@@ -21,17 +21,23 @@ let musics = [
 
 let music = document.querySelector('audio');
 let indexMusic = 0
-let durationMusic = document.querySelector('.end');
-let image = document.querySelector('img');
+let durationMusic = document.querySelector('.endt');
+let imagem = document.querySelector('img');
 let musicName = document.querySelector('.description h2');
 let singerName = document.querySelector('.description i');
+let volumeControl = document.getElementById('volume');
 
-
-renderMusic(indexMusic);
 
 
 music.addEventListener('loadedmetadata', () => {
     durationMusic.textContent = secondsForMinutes(Math.floor(music.duration));
+});
+
+music.volume = volumeControl.value;
+
+
+volumeControl.addEventListener('input', (event) => {
+    music.volume = event.target.value; 
 });
 
 
@@ -55,11 +61,11 @@ document.querySelector('.next-arrow').addEventListener('click', () => {
 });
 
 function renderMusic(index) {
-    music.setAttribute('src', musics[index].src);
+    music.setAttribute('src', musicas[index].src);
     music.addEventListener('loadeddata', () => {
-        musicName.textContent = musics[index].title;
-        singerName.textContent = musics[index].artist;
-        image.src = musics[index].img;
+        musicName.textContent = musicas[index].title;
+        singerName.textContent = musicas[index].artist;
+        imagem.src = musics[index].img;
         music.addEventListener('loadedmetadata', () => {
             durationMusic.textContent = secondsForMinutes(Math.floor(music.duration));
         });
@@ -93,4 +99,3 @@ function secondsForMinutes(seconds) {
     }
     return fieldMinutes + ":" + fieldSeconds
 }
-

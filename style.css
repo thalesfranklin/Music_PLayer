@@ -79,6 +79,66 @@ progress {
     align-items: center;
     margin-top: 15px;
 }
+.volume-control {
+    display: flex;
+    align-items: center;
+    width: 284px; /* Largura consistente com outros elementos */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+.volume-label {
+    font-size: 1rem; /* Tamanho da fonte para o rótulo */
+    color: #333; /* Cor do texto */
+    margin-left: 5%;
+}
+.volumeUp {
+    display: flex;
+    width: 8px;
+
+}
+.volumeOff{
+    width: 8px;
+    margin-right: 4%;
+    margin-left: 18px;
+}
+#volume {
+    -webkit-appearance: none; /* Remove estilo padrão do slider */
+    appearance: none;
+    width: 100%; 
+    height: 7px; /* Altura do slider */
+    border-radius: 5px; /* Borda arredondada */
+    background: rgba(0, 0, 0, 0.1); /* Fundo do slider */
+    outline: none; /* Remove contorno ao focar */
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove estilo padrão do thumb */
+    appearance: none;
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    border-radius: 50%; /* Thumb arredondado */
+    background: #555657; /* Cor do thumb */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background 0.3s; /* Transição suave na cor */
+}
+
+#volume::-webkit-slider-thumb:hover {
+    background: #000000; /* Cor mais escura no hover */
+}
+
+#volume::-moz-range-thumb {
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    border-radius: 50%; /* Thumb arredondado */
+    background: #000000; /* Cor do thumb */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background 0.3s; /* Transição suave na cor */
+}
+
+#volume::-moz-range-thumb:hover {
+    background: #000000; /* Cor mais escura no hover */
+}
+
 
 .bi-play-circle-fill,
 .bi-pause-circle {
