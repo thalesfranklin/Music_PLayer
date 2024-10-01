@@ -65,7 +65,7 @@ function renderMusic(index) {
     music.addEventListener('loadeddata', () => {
         musicName.textContent = musicas[index].title;
         singerName.textContent = musicas[index].artist;
-        imagem.src = musics[index].img;
+        imagem.src = musicas[index].img;
         music.addEventListener('loadedmetadata', () => {
             durationMusic.textContent = secondsForMinutes(Math.floor(music.duration));
         });
