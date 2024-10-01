@@ -132,11 +132,11 @@ progress {
     border-radius: 50%; /* Thumb arredondado */
     background: #000000; /* Cor do thumb */
     cursor: pointer; /* Cursor de ponteiro */
-    transition: background 0.3s; /* Transição suave na cor */
+    transition: background 0.3s; 
 }
 
 #volume::-moz-range-thumb:hover {
-    background: #000000; /* Cor mais escura no hover */
+    background: #000000; 
 }
 
 

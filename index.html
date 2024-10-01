@@ -15,38 +15,38 @@
 </head>
 
 <body>
-    <div class="all">
-        <img src="/imagens/Ted.jpeg" alt="LoseControl">
-        <div class="descripton">
-            <h2>Lose Control</h2>
-            <i>Teddy Swims</i>
+    <div id="all" class="all">
+        <img id="img" src="/imagens/Ted.jpeg" alt="LoseControl">
+        <div id="descripton" class="descripton">
+            <h2 id="name">Lose Control</h2>
+            <i id="descriptonI">Teddy Swims</i>
         </div>
-        <div class="duration">
-            <div class="bar">
-                <progress value="0" max="1"></progress>
-                <div class="point">
+        <div id="duration" class="duration">
+            <div id="bar" class="bar">
+                <progress id="progress" value="0" max="1"></progress>
+                <div id="point" class="point">
                     <i class="bi bi-record-fill"></i>
                 </div>
             </div>
-            <div class="time">
-                <p class="start">0:00</p>
-                <p class="endt">0:00</p>
+            <div id="time" class="time">
+                <p id="start" class="start">0:00</p>
+                <p id="endt" class="endt">0:00</p>
             </div>
         </div>
-        <div class="volume-control">
+        <div id="volume-control" class="volume-control">
             <label for="volume"><i class="bi bi-volume-off-fill volumeOff"></i> </i></label>
             <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
             <i class="bi bi-volume-up-fill volumeUp"></i>
         </div>
-        <div class="player">
-            <i class="bi bi-skip-start-fill prev-arrow"></i>
-            <i class="bi bi-play-circle-fill play-button"></i>
-            <i class="bi bi-pause-circle pause-button"></i>
-            <i class="bi bi-skip-end-fill next-arrow"></i>
+        <div id="player" class="player">
+            <i id="prev-arrow" class="bi bi-skip-start-fill prev-arrow"></i>
+            <i id="play-button" class="bi bi-play-circle-fill play-button"></i>
+            <i id="pause-button" class="bi bi-pause-circle pause-button"></i>
+            <i id="next-arrow" class="bi bi-skip-end-fill next-arrow"></i>
         </div>
-        <audio src="./musicas/LoseControl - Teddy Swims.mp3"></audio>
+        <audio id="audio" src="./musicas/LoseControl - Teddy Swims.mp3"></audio>
     </div>
-    
+
 </body>
 <script src="script.js"></script>
 
