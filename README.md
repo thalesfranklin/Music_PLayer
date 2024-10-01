@@ -1,6 +1,8 @@
 # Music-Player
 Um simples player de músicas desenvolvido com JavaScript. Este projeto permite aos usuários ouvir músicas diretamente no navegador.
 
+Link deploy: https://thalesfranklin.github.io/Music_PLayer/
+
 ## Funcionalidades
 
 - Reproduzir, pausar e parar músicas.
